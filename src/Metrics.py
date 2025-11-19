@@ -61,8 +61,7 @@ def ci_mean_normal(x, confidence=0.95):
 
     z_critical = 1.96
 
-    se = s / sqrt(n)
-    half_width = z_critical 
+    half_width = z_critical * s / sqrt(n)
     lo = mean_x - half_width
     hi = mean_x + half_width
 
